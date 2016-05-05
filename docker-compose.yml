@@ -1,0 +1,9 @@
+nginx:
+    image: daocloud.io/nginx
+    container_name: nginx
+    net: host
+    restart: always
+    volumes:
+        - /data:/data
+        - /etc/nginx:/etc/nginx
+        - /var/log/nginx:/var/log/nginx
